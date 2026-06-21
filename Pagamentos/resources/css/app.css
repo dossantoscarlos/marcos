@@ -1,0 +1,108 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Custom ExtJS Desktop Simulation Theme Utilities */
+
+/* Desktop Grid Layout Styling */
+.ext-grid-header {
+    background: linear-gradient(to bottom, #f9fafb, #f3f4f6);
+    border-bottom: 1px solid #d1d5db;
+}
+
+.ext-grid-cell {
+    border-right: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.ext-grid-row:hover {
+    background-color: #f0f7ff !important;
+}
+
+.ext-grid-row-selected {
+    background-color: #dfe8f6 !important;
+}
+
+/* Glassmorphism panel and windows */
+.ext-window {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+}
+
+.ext-window-header {
+    background: linear-gradient(to bottom, #4f82b8, #36649c);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    cursor: move;
+}
+
+.ext-window-header-active {
+    background: linear-gradient(to bottom, #1d4ed8, #1e40af);
+}
+
+.ext-window-header-inactive {
+    background: linear-gradient(to bottom, #6b7280, #4b5563);
+}
+
+/* Taskbar styling */
+.ext-taskbar {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom scrollbars */
+.ext-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.ext-scrollbar::-webkit-scrollbar-track {
+    background: #f3f4f6;
+    border-left: 1px solid #e5e7eb;
+}
+
+.ext-scrollbar::-webkit-scrollbar-thumb {
+    background: #c5cdd6;
+    border-radius: 4px;
+}
+
+.ext-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #a1b0c0;
+}
+
+/* Desktop Icon Selection Styling */
+.ext-shortcut {
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.ext-shortcut:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.ext-shortcut.active {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Window Minimize Animation */
+.ext-window.minimized {
+    transform: scale(0.8) translateY(100px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Start Menu styling */
+.ext-start-menu {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
